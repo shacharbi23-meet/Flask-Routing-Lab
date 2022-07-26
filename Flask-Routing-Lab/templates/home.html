@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Flaxiton Gaming</title>
+    <style >
+        .text {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Flaxiton Gaming - The best way to get into games!</h1>
-    <form>
+    <h1 class="text">Flaxiton Gaming - The best way to get into games!</h1>
+    <form style="align-items: center;">
         <label for="search">What do you wanna look for?</label><br>
         <input type="text" name="search"><br><br>
         <input type="submit" name="submit">
     </form>
-    <p>Two childhood friends wanted to share their love for games. That's what they did! This is THE BEST store for you to buy and hear opinions about new releases!</p>
-    <h2>So come on and join us!</h2>
-    <div style="display: flex; justify-content: center;">
-        <h2>Some new recommended releases! </h2>
+    <p class="text">Two childhood friends wanted to share their love for games. That's what they did! This is THE BEST store for you to buy and hear opinions about new releases!</p>
+    <h2 class="text">So come on and join us!</h2><br><br>
+    <h2 class="text">Some new recommended releases! </h2>
+    <div style="display: flex; align-items: center; justify-content: safe center;">
         <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png" style="height: 300px; width: 300px;">
         <img src="https://m.media-amazon.com/images/I/81fUufF8JjL._SY445_.jpg" style="height: 300px; width: 300px";>
         <img src="https://cdn.akamai.steamstatic.com/steam/apps/1117850/capsule_616x353.jpg?t=1656941981" style="height: 300px; width: 400px">
     </div>
+    <a href="{{url_for ('product.html')}}" class="text">Some of our products!</a>
 </body>
 </html>
