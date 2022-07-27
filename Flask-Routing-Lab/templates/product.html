@@ -9,11 +9,11 @@
               max-width: 300px;
               margin: auto;
               text-align: center;
-              font-family: arial;
+              font-family: monospace;
             }
 
             .price {
-              color: grey;
+              color: #75647a;
               font-size: 22px;
             }
 
@@ -35,13 +35,14 @@
     </style>
 </head>
 <body>
-
+  <h1 style="text-align: center;">Our products!</h1>
     <div class="products">
   <img src="https://i3.wp.com/img.phonandroid.com/2022/07/stray-PS5.jpeg?resize=780,470"  style="width:100%">
   <h1>Stray - PS5, PS4, PC</h1>
   <p class="price">$26.99</p>
   <p>Made by BlueTwelve Studio., in this game you play as a cute cat.</p>
-  <p><button>Add to Cart</button></p>
+  <p><a href="{{url_for('cart')}}"><button>Add to Cart</button></a>
+  </p>
     </div>
 
     <div class="products">
@@ -49,7 +50,8 @@
   <h1>Kirby at the Forgotten Land - Nintendo Switch</h1>
   <p class="price">$26.99</p>
   <p>Made by HAL Labratory. Kirby is in an all new, 3D adventure!.</p>
-  <p><button>Add to Cart</button></p>
+  <p><a href="{{url_for('cart')}}"><button>Add to Cart</button></a>
+  </p>
 </div>
 
     <div class="products">
@@ -57,15 +59,17 @@
   <h1>Detroid: Become Human- PS5, PS4, PC</h1>
   <p class="price">$26.99</p>
   <p>Made by Quantic Dream. Androids are the norm now, recognized as servants of humans. But slowly things start to change. Follow our 3 protagonists and shape their story!</p>
-  <p><button>Add to Cart</button></p>
+  <p><a href="{{url_for('cart')}}"><button>Add to Cart</button></a>
+  </p>
 </div>
 
     <div class="products">
   <img src="https://m.media-amazon.com/images/I/61IqytXadEL._SL1024_.jpg"  style="width:80%">
   <h1>Wondersong - PS4, XBOX One, Nintendo Switch, PC</h1>
-  <p class="price">$26.99</p>
+  <p class="price">$19.99</p>
   <p>Made by Indie Game Developer, Greg Lobanov. You're the chosen one, fixing the world with your voice!</p>
-  <p><button>Add to Cart</button></p>
+  <p><a href="{{url_for('cart')}}"><button>Add to Cart</button></a>
+  </p>
 </div>
 
 
