@@ -7,15 +7,15 @@ app = Flask(  # Create a flask app
     static_folder='static'  # Name of directory for static files
 )
 
-app.route("/")
+@app.route("/")
 def home():
     return render_template("home.html")
 
-app.route("/Our-Products!")
+@app.route("/Our-Products!")
 def product():
     return render_template("product.html")
 
-app.route("/Your cart!")
+@app.route("/Your-cart!")
 def cart():
     return render_template("cart.html")
 
